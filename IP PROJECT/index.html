@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <meta name="viewport" content="width =device-width,initial-scale =1">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+ <section id="banner">
+    <img src="images/pngfind.com-lsd-tab-png-4306579.png" class="logo">
+    <div class="banner-text">
+        <h1> DOWNLOAD <br> REASEARCH PAPERS </h1>
+        <P>Get all scientific and research paper of all domain at one place. </P>
+        <div class="banner-btn">
+            <a href="#"><strong><span></span>Sign Up</strong></a>
+            <a href="#"><strong><span></span>Login</strong></a>
+            <a href="#"><strong><span></span>Upgrade to Premium</strong></a>
+
+        </div>
+    </div>
+ </section> 
+ <div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PAPERS</a></li>
+            <li><a href="#">TOPICS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">HELP CENTER</a></li>
+        </ul>
+    </nav>
+ </div>
+ <div id="menubtn">
+    <img src="images/menu.png" id="menu">
+ </div>
+ <!-- features -->
+ <section id="features">
+    <div class="tittle-text">
+        <p>FEATURES</p>
+        <h1>Why Us</h1>
+    </div>
+    <div class="feature-box">
+        <div class="feature">
+            <h1>40 Million+ research papers</h1>
+            <div class="feature-description">
+                <div class="feature-icon">
+                    <i class="fa fa-leanpub"></i>
+                </div>
+                <div class="feature-text">
+                    <p>Here at Study Soup you will get more than 40 million research paper
+                         across all fields from Medieval History to Manufacturing Engineering.</p>
+                </div>
+            </div>
+            <h1> You can Join Researchers</h1>
+            <div class="feature-description">
+                <div class="feature-icon">
+                    <i class="fa fa-check-square-o"></i>
+                </div>
+                <div class="feature-text">
+                    <p>Here at Study Soup you can also publish your own research work to 
+                        streamline your work and impact millions of learner. </p>
+                </div>
+            </div>
+            <h1> By Unlock Premium</h1>
+            <div class="feature-description">
+                <div class="feature-icon">
+                    <i class="fa fa-unlock"></i>
+                </div>
+                <div class="feature-text">
+                    <p> By unlocking our premium you can work faster and smarter with advanced research discovery tools.Download groups of related papers to 
+                        jumpstart your research. Save time with detailed summaries and search alerts.</p>
+                </div>
+            </div>
+        </div>
+        <div class="feature-img">
+            <img src="images/books-683897.jpg" alt="">
+        </div>
+    </div>
+ </section>
+ <section id="testimonial">
+    <div class="tittle-text">
+        <p>Testimonials</p>
+        <h1>What Researchers Says</h1>
+    </div>
+    <div class="testimonial-row">
+        <div class="testimonial-col">
+            <div class="user">
+                <img src="images/img-1.jpg" alt="user1">
+                <div class="user-info">
+                    <h4>KEN NORMAN</h4>
+                    <small>@kennorman</small>
+                </div>
+            </div>
+            <p>“I go through all the articles in the bulk download, save the ones that are clearly going to be useful and discard the remainder. 
+                This saves loads of time but also points me in directions I might not otherwise have thought of looking.”</p>
+        </div>
+        
+        <div class="testimonial-col">
+            <div class="user">
+                <img src="images/img-3.jpg" alt="user1">
+                <div class="user-info">
+                    <h4>Ricky Danial</h4>
+                    <small>@rickydanial</small>
+                </div>
+            <p>“The bulk downloads give me the chance to read more related articles as well as seeing what research is citing 
+                the article I am looking at. It also helps me rapidly expand my personal digital library of references.”</p>
+        </div>
+    </div>
+ </section>
+<script>
+var menubtn = document.getElementById("menubtn")    
+var sideNav = document.getElementById("sideNav")   
+var menu = document.getElementById("menu")    
+
+sideNav.style.right = "-250px";
+
+menubtn.onclick = function(){
+    if(sideNav.style.right =="-250px"){
+        sideNav.style.right ="0";
+        menu.src ="images/close.png";
+    }
+    else{
+        sideNav.style.right ="-250px";
+        menu.src ="images/menu.png";
+    }
+}
+</script>
+</body>
+</html>
